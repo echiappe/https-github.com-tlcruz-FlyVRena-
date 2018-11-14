@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.props" Condition="Exists('..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F051024-BBF9-40D5-BD4A-79004BD28403}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VRLibrary</RootNamespace>
+    <AssemblyName>VRLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.221.x86.1.0\lib\Emgu.CV.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.221.x86.1.0\lib\Emgu.CV.GPU.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.221.x86.1.0\lib\Emgu.CV.ML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.221.x86.1.0\lib\Emgu.CV.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\packages\EmguCV.221.x86.1.0\lib\Emgu.Util.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="OpenCV.Net, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCV.Net.3.3.0\lib\net40\OpenCV.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.1.1.1589.5942\lib\NET40\OpenTK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.1.1.1589.5942\lib\NET40\OpenTK.GLControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="uEyeDotNet">
+      <HintPath>..\..\..\..\..\..\..\Program Files\IDS\uEye\Develop\DotNet\signed\uEyeDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExternalCamera\ArduinoGalvoControl.cs" />
+    <Compile Include="ExternalCamera\CameraCapture.cs" />
+    <Compile Include="ExternalCamera\FileCapture.cs" />
+    <Compile Include="ExternalCamera\Frame.cs" />
+    <Compile Include="ExternalCamera\PulsePal.cs" />
+    <Compile Include="ExternalCamera\ReadCOMPort.cs" />
+    <Compile Include="ExternalCamera\uEyeCamera.cs" />
+    <Compile Include="ExternalCamera\uEyeCameraCapture.cs" />
+    <Compile Include="ExternalCamera\uEyeCameraCapture2.cs" />
+    <Compile Include="ExternalCamera\VideoWriter.cs" />
+    <Compile Include="ImageProcessing\BackgroundModel.cs" />
+    <Compile Include="ImageProcessing\FastBlobTracking.cs" />
+    <Compile Include="ImageProcessing\Grayscale.cs" />
+    <Compile Include="ImageProcessing\KalmanFilterTrack.cs" />
+    <Compile Include="ImageProcessing\ModelKalman.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stimulus\ServiceFactories\CameraFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\DrawFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\ModelFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\NameFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\PositionFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\ServiceFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\FixedOnBasedFlyPosFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\SmallObjectOpenLoopFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\SmallObjectPositionFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\SmallObjectVelocityFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyMultipleConditionsFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyPositionOnly2Factory.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\SmallObjectOpenLoop.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\SmallObjectPositionUpdate.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\SmallObjectVelocityUpdate.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyClosedAndOpenFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyOpenClosedDelayFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyOptomotorResponseFactory.cs" />
+    <Compile Include="Stimulus\ServiceFactories\UpdateFactories\UpdateWithFlyPositionOnlyFactory.cs" />
+    <Compile Include="Stimulus\Services\CameraService.cs" />
+    <Compile Include="Stimulus\Services\DrawService.cs" />
+    <Compile Include="Stimulus\Services\NameService.cs" />
+    <Compile Include="Stimulus\Services\PositionService.cs" />
+    <Compile Include="Stimulus\Services\UpdateService.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\FixedOnBasedFlyPos.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFly.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyClosedAndOpen.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyMultipleConditions.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyOpenClosedDelay.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyOptomotorResponse.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyPositionOnly.cs" />
+    <Compile Include="Stimulus\Services\UpdateServices\UpdateWithFlyPositionOnly2.cs" />
+    <Compile Include="Stimulus\Subsystems\RenderSubsystem.cs" />
+    <Compile Include="Stimulus\Subsystems\UpdateSubsystem.cs" />
+    <Compile Include="Stimulus\WorldObject.cs" />
+    <Compile Include="Visualizers\IDialogTypeVisualizerService.cs" />
+    <Compile Include="Visualizers\ImageVisualizer.cs" />
+    <Compile Include="Visualizers\IplImageHelper.cs" />
+    <Compile Include="Visualizers\IplImageTexture.cs" />
+    <Compile Include="Visualizers\ServiceProvider.cs" />
+    <Compile Include="Visualizers\TypeVisualizerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizers\TypeVisualizerDialog.Designer.cs">
+      <DependentUpon>TypeVisualizerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizers\VisualizerCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visualizers\VisualizerCanvas.Designer.cs">
+      <DependentUpon>VisualizerCanvas.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\cvextern.dll">
+      <Link>cvextern.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_calib3d220.dll">
+      <Link>opencv_calib3d220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_contrib220.dll">
+      <Link>opencv_contrib220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_core220.dll">
+      <Link>opencv_core220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_features2d220.dll">
+      <Link>opencv_features2d220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_ffmpeg220.dll">
+      <Link>opencv_ffmpeg220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_flann220.dll">
+      <Link>opencv_flann220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_gpu220.dll">
+      <Link>opencv_gpu220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_highgui220.dll">
+      <Link>opencv_highgui220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_imgproc220.dll">
+      <Link>opencv_imgproc220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_legacy220.dll">
+      <Link>opencv_legacy220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_ml220.dll">
+      <Link>opencv_ml220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_objdetect220.dll">
+      <Link>opencv_objdetect220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\opencv_video220.dll">
+      <Link>opencv_video220.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\EmguCV.221.x86.1.0\opencv\ZedGraph.dll">
+      <Link>ZedGraph.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Visualizers\TypeVisualizerDialog.resx">
+      <DependentUpon>TypeVisualizerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizers\VisualizerCanvas.resx">
+      <DependentUpon>VisualizerCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.props'))" />
+    <Error Condition="!Exists('..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.targets'))" />
+  </Target>
+  <Import Project="..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.targets" Condition="Exists('..\packages\OpenCV.Net.3.3.0\build\net40\OpenCV.Net.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
