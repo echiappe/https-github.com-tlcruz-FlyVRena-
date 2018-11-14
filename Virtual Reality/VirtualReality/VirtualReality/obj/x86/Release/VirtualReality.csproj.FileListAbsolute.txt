@@ -1,0 +1,329 @@
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Documents\Tomas\Virtual Reality Free Walking\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Cameras\Virtual Reality Free Walking 30.7\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.03\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\User\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\cvextern.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_calib3d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_contrib220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_core220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_features2d220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ffmpeg220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_flann220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_gpu220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_highgui220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_imgproc220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_legacy220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_ml220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_objdetect220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\opencv_video220.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\ZedGraph.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Content\Effect.xnb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VirtualReality.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.CV.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\uEyeDotNet.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Emgu.Util.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\VRLibrary.pdb
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Content.Pipeline.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Game.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenCV.Net.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\OpenTK.GLControl.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Video.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.csprojResolveAssemblyReference.cache
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.exe
+C:\Users\Chiappee\Desktop\Virtual Reality Free Walking 2016.08.05\VirtualReality\VirtualReality\VirtualReality\obj\x86\Release\VirtualReality.pdb
