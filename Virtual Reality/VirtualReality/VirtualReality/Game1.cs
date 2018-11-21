@@ -57,13 +57,17 @@ namespace VirtualReality
 
         public Game1()
         {
+            // Define the VR window properties
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 800;
             graphics.SynchronizeWithVerticalRetrace = false;
             graphics.PreferMultiSampling = true;
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
             this.TargetElapsedTime = TimeSpan.FromTicks(333);
             graphics.ApplyChanges();
+            
+            // Set application priority to maximum
             Content.RootDirectory = "Content";
             Process process = Process.GetCurrentProcess();
             process.PriorityClass = ProcessPriorityClass.RealTime;
@@ -72,35 +76,48 @@ namespace VirtualReality
 
         protected override void Initialize()
         {
-            this.graphics.GraphicsProfile = GraphicsProfile.HiDef;
+            // Add some objects as services
             Services.AddService(typeof(GraphicsDeviceManager), graphics);
             Services.AddService(typeof(GraphicsDevice), this.GraphicsDevice);
             pType = new VRProtocol();
             Services.AddService(typeof(VRProtocol), pType);
+            
+            // Initialize vr components
             render = new RenderSubsystem(this);
             update = new UpdateSubsystem(this);
-            //update.Enabled = true;
             Components.Add(render);
             Components.Add(update);
+            
+            // Initialize objects for online tracking
             ft = new FastBlobTracking();
             kft = new KalmanFilterTrack();
             Services.AddService(typeof(KalmanFilterTrack), kft);
+            
+            // Load virtual world
             GetStimulus();
+            
+            // Initialize frame acquisition objects
             pulsePal = new PulsePal();
             cam1 = new uEyeCamera(0, "C:\\Users\\Chiappee\\Desktop\\p1 600x600.ini", true, true, 850);
             cam2 = new uEyeCamera(1, "C:\\Users\\Chiappee\\Desktop\\p2 - 1024x544.ini", false, true, 250, pulsePal);
+            
+            // Initalize file for data storage
             filestream = File.OpenWrite("C:\\Users\\Chiappee\\Desktop\\Cameras.txt");
             textWriter = new StreamWriter(filestream);
             textWriter.Flush();
+            
+            // Set current Thread to maximum priority
             Thread t = Thread.CurrentThread;
             t.Priority = ThreadPriority.Highest;
             Thread.BeginThreadAffinity();
             SetForegroundWindow(this.Window.Handle);
+            
+            // Set the location of the VR window
             var form = (System.Windows.Forms.Form)System.Windows.Forms.Control.FromHandle(this.Window.Handle);
             form.TopMost = true;
             form.Location = new System.Drawing.Point(-1280, 0);
-            // form.Location = new System.Drawing.Point(-1280,-1280);
-
+            
+            // Calibration values
             c[0] = 0.0011f;
             c[1] = -0.7660f;
             c[2] = 0.0000f;
@@ -113,18 +130,6 @@ namespace VirtualReality
             c[9] = 4.6354f+0.07f;
             c[10] = -12.9056f;
             c[11] = -1.0711f;
-            //c[0] = 0.0012f;
-            //c[1] = -0.8937f;
-            //c[2] = 0.0000f;
-            //c[3] = 0.0005f;
-            //c[4] = 1;
-            //c[5] = 0.0013f;
-            //c[6] = -0.0000f;
-            //c[7] = -0.3741f;
-            //c[8] = 11.6243f;
-            //c[9] = 5.6421f;
-            //c[10] = -12.9017f;
-            //c[11] = -0.9338f;
 
             base.Initialize();
         }
