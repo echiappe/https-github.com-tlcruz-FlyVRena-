@@ -26,29 +26,32 @@ namespace VirtualReality
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        //SpriteBatch spriteBatch;
         private bool start = false;
         bool startRecord = true;
 
+        // Vars Frame Acquisition
         uEyeCamera cam1;
         uEyeCamera cam2;
+        PulsePal pulsePal;
         Frame frame;
 
         // Vars Image Processing
         FastBlobTracking ft;
         KalmanFilterTrack kft;
-        PulsePal pulsePal;
         float[] c = new float[12];
 
         // Vars Stimuli
         WorldObject root = new WorldObject();
         public RenderSubsystem render;
         public UpdateSubsystem update;
+        
+        // Vars Data Storage
         FileStream filestream;
         TextWriter textWriter;
         public VRProtocol pType;
         Stopwatch stopwatch = new Stopwatch();
 
+        //Set the VR window to foreground
         [DllImport("user32.dll")]
         static extern bool SetForegroundWindow(IntPtr hWnd);
 
