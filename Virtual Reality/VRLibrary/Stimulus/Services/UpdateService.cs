@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +38,8 @@ namespace VRLibrary.Stimulus.Services
         public long lostFrames;
         public long currentFrame2;
         public long lostFrames2;
+        public float tDuration;
+        public List<string> trials;
     }
 
 }
