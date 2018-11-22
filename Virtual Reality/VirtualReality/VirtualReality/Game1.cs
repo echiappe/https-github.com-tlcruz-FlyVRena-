@@ -42,6 +42,7 @@ namespace VirtualReality
 
         // Vars Stimuli
         WorldObject root = new WorldObject();
+        ExperimentProtocol EP;
         public RenderSubsystem render;
         public UpdateSubsystem update;
 
@@ -90,8 +91,6 @@ namespace VirtualReality
             // Add some objects as services
             Services.AddService(typeof(GraphicsDeviceManager), graphics);
             Services.AddService(typeof(GraphicsDevice), this.GraphicsDevice);
-            pType = new VRProtocol();
-            Services.AddService(typeof(VRProtocol), pType);
 
             // Initialize vr components
             render = new RenderSubsystem(this);
@@ -101,6 +100,10 @@ namespace VirtualReality
 
             // Load virtual world
             GetStimulus();
+            pType = new VRProtocol();
+            pType.tDuration = EP.durationTrial;
+            pType.trials = EP.stimTypes;
+            Services.AddService(typeof(VRProtocol), pType);
 
             // Initialize frame acquisition objects
             pulsePal = new PulsePal();
@@ -169,59 +172,75 @@ namespace VirtualReality
                 start = true;
             }
 
-            if (start && cam1.m_IsLive)
+            if (start)
             {
-                if (startRecord)
+                if (cam1.m_IsLive)
                 {
-                    //Select to store video recordings
-                    //cam1.RecordVideo("C:\\Users\\Chiappee\\Desktop\\1");
-                    //cam2.RecordVideo("C:\\Users\\Chiappee\\Desktop\\2");
-                    pulsePal.StartCommunication("COM3");
-
-                    // Start experiment timer
-                    stopwatch.Start();
-                    startRecord = false;
-                    this.render.Visible = true;
-                }
-
-                // if a frame is acquired
-                if (cam1.queue.TryPop(out frame))
-                {
-                    frameCount = frameCount + 1;
-                    // if the frame is valid
-                    if (!frame.image.IsClosed && !frame.image.IsInvalid && frame.image.Size != Size.Zero)
+                    if (startRecord)
                     {
-                        // save frame properties 
-                        pType.currentFrame = frameCount;// cam1.m_s32FrameCoutTotal;
-                        pType.currentFrame2 = cam2.m_s32FrameCoutTotal;
-                        pType.lostFrames = cam1.m_s32FrameLost;
-                        pType.lostFrames2 = cam2.m_s32FrameLost;
+                        //Select to store video recordings
+                        //cam1.RecordVideo("C:\\Users\\Chiappee\\Desktop\\1");
+                        //cam2.RecordVideo("C:\\Users\\Chiappee\\Desktop\\2");
+                        pulsePal.StartCommunication("COM3");
 
-                        // Get the values from the online tracking
-                        fb = ft.GetParams(frame.image);
-                        kft.filterPoints(fb);
-                        f = GetVrPos(fb);
-
-                        // Call all objects from the virtual world to update
-                        update.UpdateAsync(gameTime);
-
-                        // Save the data
-                        s = pType.currentFrame.ToString() + " " + pType.lostFrames.ToString() + " " + pType.currentFrame2.ToString() + " " + pType.lostFrames2.ToString() + " " + f[1].ToString() + " " + f[2].ToString() + " " + kft.pars[2].ToString();
-                        FileWrite(s, textWriter);
-
-                        // Algin the galvo mirrors
-                        if (pulsePal.queue.Count > 100)
-                            pulsePal.queue.Clear();
-                        pulsePal.queue.Push(f);
+                        // Start experiment timer
+                        stopwatch.Start();
+                        startRecord = false;
+                        this.render.Visible = true;
                     }
-                    // Dispose of the acquired frame
-                    frame.Dispose();
-                }
 
-                // If timer passes the duration of the experiment, terminate the program
-                if (stopwatch.ElapsedMilliseconds >= 24 * 60 * 1000)//24*60*1000)//18 * 60 * 1000)//10 * 60 * 1000) //
+                    // if a frame is acquired
+                    if (cam1.queue.TryPop(out frame))
+                    {
+                        frameCount = frameCount + 1;
+                        // if the frame is valid
+                        if (!frame.image.IsClosed && !frame.image.IsInvalid && frame.image.Size != Size.Zero)
+                        {
+                            // save frame properties 
+                            pType.currentFrame = frameCount;// cam1.m_s32FrameCoutTotal;
+                            pType.currentFrame2 = cam2.m_s32FrameCoutTotal;
+                            pType.lostFrames = cam1.m_s32FrameLost;
+                            pType.lostFrames2 = cam2.m_s32FrameLost;
+
+                            // Get the values from the online tracking
+                            fb = ft.GetParams(frame.image);
+                            kft.filterPoints(fb);
+                            f = GetVrPos(fb);
+
+                            // Call all objects from the virtual world to update
+                            update.UpdateAsync(gameTime);
+
+                            // Save the data
+                            s = pType.currentFrame.ToString() + " " + pType.lostFrames.ToString() + " " + pType.currentFrame2.ToString() + " " + pType.lostFrames2.ToString() + " " + f[1].ToString() + " " + f[2].ToString() + " " + kft.pars[2].ToString();
+                            FileWrite(s, textWriter);
+
+                            // Algin the galvo mirrors
+                            if (pulsePal.queue.Count > 100)
+                                pulsePal.queue.Clear();
+                            pulsePal.queue.Push(f);
+                        }
+                        // Dispose of the acquired frame
+                        frame.Dispose();
+                    }
+
+                    // If timer passes the duration of the experiment, terminate the program
+                    if (stopwatch.ElapsedMilliseconds >= this.EP.duration * 60 * 1000)//24*60*1000)//18 * 60 * 1000)//10 * 60 * 1000) //
+                    {
+                        this.Exit();
+                    }
+                }
+                else
                 {
-                    this.Exit();
+                    if (startRecord)
+                    {
+                        stopwatch.Start();
+                        startRecord = false;
+                        this.render.Visible = true;
+                    }
+                    if (stopwatch.ElapsedMilliseconds >= this.EP.duration * 60 * 1000)//24*60*1000)//18 * 60 * 1000)//10 * 60 * 1000) //
+                    {
+                        this.Exit();
+                    }
                 }
             }
             else
@@ -232,8 +251,8 @@ namespace VirtualReality
                     {
                         frame.Dispose();
                     }
-                    this.render.Visible = false;
                 }
+                this.render.Visible = false;
             }
             base.Update(gameTime);
         }
@@ -279,6 +298,9 @@ namespace VirtualReality
                 Services.AddService(typeof(WorldObject), root);
                 Init(root);
             }
+            ExperimentProtocolFactory epf = (ExperimentProtocolFactory)root.objectBuilder[0];
+            epf.Initialize(root, this);
+            this.EP = (ExperimentProtocol)root.GetService(typeof(ExperimentProtocol));
         }
 
         // Function to initialize the virtual world
@@ -315,16 +337,21 @@ namespace VirtualReality
         // Disposal of all initiated objects
         protected override void OnExiting(object sender, EventArgs args)
         {
-            this.cam1.Dispose();
-            this.cam2.Dispose();
-            stopwatch.Stop();
-            this.textWriter.Close();
-            this.textWriter.Dispose();
-            this.filestream.Dispose();
-            this.filestream.Close();
-            this.kft.Dispose();
-            this.ft.Dispose();
-            pulsePal.Dispose();
+            if (cam1.m_IsLive == true)
+            {
+                this.cam1.Dispose();
+                if (cam2.m_IsLive == true)
+                    this.cam2.Dispose();
+                stopwatch.Stop();
+
+                this.textWriter.Close();
+                this.textWriter.Dispose();
+                this.filestream.Dispose();
+                this.filestream.Close();
+                this.kft.Dispose();
+                this.ft.Dispose();
+                pulsePal.Dispose();
+            }
             Thread.EndThreadAffinity();
             this.render.Dispose();
             this.update.Dispose();
