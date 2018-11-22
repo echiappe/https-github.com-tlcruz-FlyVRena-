@@ -44,7 +44,7 @@ namespace VirtualReality
         WorldObject root = new WorldObject();
         public RenderSubsystem render;
         public UpdateSubsystem update;
-        
+
         // Vars Data Storage
         FileStream filestream;
         TextWriter textWriter;
@@ -66,12 +66,23 @@ namespace VirtualReality
             graphics.GraphicsProfile = GraphicsProfile.HiDef;
             this.TargetElapsedTime = TimeSpan.FromTicks(333);
             graphics.ApplyChanges();
-            
+
             // Set application priority to maximum
             Content.RootDirectory = "Content";
             Process process = Process.GetCurrentProcess();
             process.PriorityClass = ProcessPriorityClass.RealTime;
             process.PriorityBoostEnabled = true;
+
+            // Set current Thread to maximum priority
+            Thread t = Thread.CurrentThread;
+            t.Priority = ThreadPriority.Highest;
+            Thread.BeginThreadAffinity();
+            SetForegroundWindow(this.Window.Handle);
+
+            // Set the location of the VR window
+            var form = (System.Windows.Forms.Form)System.Windows.Forms.Control.FromHandle(this.Window.Handle);
+            form.TopMost = true;
+            form.Location = new System.Drawing.Point(-1280, 0);
         }
 
         protected override void Initialize()
@@ -81,107 +92,98 @@ namespace VirtualReality
             Services.AddService(typeof(GraphicsDevice), this.GraphicsDevice);
             pType = new VRProtocol();
             Services.AddService(typeof(VRProtocol), pType);
-            
+
             // Initialize vr components
             render = new RenderSubsystem(this);
             update = new UpdateSubsystem(this);
             Components.Add(render);
             Components.Add(update);
-            
-            // Initialize objects for online tracking
-            ft = new FastBlobTracking();
-            kft = new KalmanFilterTrack();
-            Services.AddService(typeof(KalmanFilterTrack), kft);
-            
+
             // Load virtual world
             GetStimulus();
-            
+
             // Initialize frame acquisition objects
             pulsePal = new PulsePal();
             cam1 = new uEyeCamera(0, "C:\\Users\\Chiappee\\Desktop\\p1 600x600.ini", true, true, 850);
             cam2 = new uEyeCamera(1, "C:\\Users\\Chiappee\\Desktop\\p2 - 1024x544.ini", false, true, 250, pulsePal);
-            
-            // Initalize file for data storage
-            filestream = File.OpenWrite("C:\\Users\\Chiappee\\Desktop\\Cameras.txt");
-            textWriter = new StreamWriter(filestream);
-            textWriter.Flush();
-            
-            // Set current Thread to maximum priority
-            Thread t = Thread.CurrentThread;
-            t.Priority = ThreadPriority.Highest;
-            Thread.BeginThreadAffinity();
-            SetForegroundWindow(this.Window.Handle);
-            
-            // Set the location of the VR window
-            var form = (System.Windows.Forms.Form)System.Windows.Forms.Control.FromHandle(this.Window.Handle);
-            form.TopMost = true;
-            form.Location = new System.Drawing.Point(-1280, 0);
-            
-            // Calibration values
-            c[0] = 0.0011f;
-            c[1] = -0.7660f;
-            c[2] = 0.0000f;
-            c[3] = 0.0004f;
-            c[4] = 1;
-            c[5] = 0.0012f;
-            c[6] = -0.0000f;
-            c[7] = -0.3676f;
-            c[8] = 12.5535f;
-            c[9] = 4.6354f+0.07f;
-            c[10] = -12.9056f;
-            c[11] = -1.0711f;
 
+            if (cam1.m_IsLive == true)
+            {
+                // Initialize objects for online tracking
+                ft = new FastBlobTracking();
+                kft = new KalmanFilterTrack();
+                Services.AddService(typeof(KalmanFilterTrack), kft);
+
+                // Initalize file for data storage
+                filestream = File.OpenWrite("C:\\Users\\Chiappee\\Desktop\\Cameras.txt");
+                textWriter = new StreamWriter(filestream);
+                textWriter.Flush();
+
+                // Calibration values
+                c[0] = 0.0011f;
+                c[1] = -0.7660f;
+                c[2] = 0.0000f;
+                c[3] = 0.0004f;
+                c[4] = 1;
+                c[5] = 0.0012f;
+                c[6] = -0.0000f;
+                c[7] = -0.3676f;
+                c[8] = 12.5535f;
+                c[9] = 4.6354f + 0.07f;
+                c[10] = -12.9056f;
+                c[11] = -1.0711f;
+            }
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
-            //Set the first frame as background
-            while (frame == null)
+            if (cam1.m_IsLive == true)
             {
-                cam1.queue.TryPop(out frame);
+                //Set the first frame as background
+                while (frame == null)
+                {
+                    cam1.queue.TryPop(out frame);
+                }
+                ft.SetMask(frame.image.Clone());
             }
-            ft.SetMask(frame.image.Clone());
         }
 
         protected override void UnloadContent() { }
-        
+
         // Initalize auxiliary variables
         string s;
         float[] f = new float[3];
         float[] fprev = new float[3];
-        bool isjump = false;
         float[] fb = new float[3];
-        //KeyboardState oldstate = new KeyboardState();
-        //KeyboardState state = new KeyboardState();
         long frameCount = 0;
         protected override void Update(GameTime gameTime)
         {
             // if ESC exit the program
             if (Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Escape))
                 Exit();
-            
+
             // Start the experiment by pressing ENTER after a 20s period
             if (Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Enter) && gameTime.TotalGameTime.Seconds > 20)
             {
                 start = true;
             }
 
-            if (start)
+            if (start && cam1.m_IsLive)
             {
                 if (startRecord)
-                {   
+                {
                     //Select to store video recordings
                     //cam1.RecordVideo("C:\\Users\\Chiappee\\Desktop\\1");
                     //cam2.RecordVideo("C:\\Users\\Chiappee\\Desktop\\2");
                     pulsePal.StartCommunication("COM3");
-                    
+
                     // Start experiment timer
                     stopwatch.Start();
                     startRecord = false;
                     this.render.Visible = true;
                 }
-                
+
                 // if a frame is acquired
                 if (cam1.queue.TryPop(out frame))
                 {
@@ -189,36 +191,24 @@ namespace VirtualReality
                     // if the frame is valid
                     if (!frame.image.IsClosed && !frame.image.IsInvalid && frame.image.Size != Size.Zero)
                     {
-                        //state = Keyboard.GetState();
-                        //if (oldstate.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Up) && state.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.Up))
-                        //    pulsePal.auxy += 1;
-                        //if (oldstate.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Down) && state.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.Down))
-                        //    pulsePal.auxy -= 1;
-                        //if (oldstate.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Left) && state.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.Left))
-                        //    pulsePal.auxx += 1;
-                        //if (oldstate.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Right) && state.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.Right))
-                        //    pulsePal.auxx -= 1;
-                        //if (oldstate.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Z) && state.IsKeyUp(Microsoft.Xna.Framework.Input.Keys.Z))
-                        //    Console.Write("");
-                        
                         // save frame properties 
                         pType.currentFrame = frameCount;// cam1.m_s32FrameCoutTotal;
                         pType.currentFrame2 = cam2.m_s32FrameCoutTotal;
                         pType.lostFrames = cam1.m_s32FrameLost;
                         pType.lostFrames2 = cam2.m_s32FrameLost;
-                        
+
                         // Get the values from the online tracking
                         fb = ft.GetParams(frame.image);
                         kft.filterPoints(fb);
                         f = GetVrPos(fb);
-                        
+
                         // Call all objects from the virtual world to update
                         update.UpdateAsync(gameTime);
-                        
+
                         // Save the data
                         s = pType.currentFrame.ToString() + " " + pType.lostFrames.ToString() + " " + pType.currentFrame2.ToString() + " " + pType.lostFrames2.ToString() + " " + f[1].ToString() + " " + f[2].ToString() + " " + kft.pars[2].ToString();
                         FileWrite(s, textWriter);
-                        
+
                         // Algin the galvo mirrors
                         if (pulsePal.queue.Count > 100)
                             pulsePal.queue.Clear();
@@ -227,7 +217,7 @@ namespace VirtualReality
                     // Dispose of the acquired frame
                     frame.Dispose();
                 }
-                
+
                 // If timer passes the duration of the experiment, terminate the program
                 if (stopwatch.ElapsedMilliseconds >= 24 * 60 * 1000)//24*60*1000)//18 * 60 * 1000)//10 * 60 * 1000) //
                 {
@@ -236,22 +226,25 @@ namespace VirtualReality
             }
             else
             {
-                if (cam1.queue.TryPop(out frame))
+                if (cam1.m_IsLive == true)
                 {
-                    frame.Dispose();
+                    if (cam1.queue.TryPop(out frame))
+                    {
+                        frame.Dispose();
+                    }
+                    this.render.Visible = false;
                 }
-                this.render.Visible = false;
             }
             base.Update(gameTime);
         }
-        
+
         // Render the virtual world
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
             base.Draw(gameTime);
         }
-        
+
         // Auxliary function to calibrate the onlne tracking data
         public float[] GetVrPos(float[] pars)
         {
@@ -261,7 +254,7 @@ namespace VirtualReality
             VRPos[1] = c[9] + c[8] * (c[0] * pars[1] + c[1]) / (c[2] * pars[0] + c[3] * pars[1] + c[4]);
             return VRPos;
         }
-        
+
         // Funtion to open a new dialog window toload the virtual world file
         public void GetStimulus()
         {
@@ -287,7 +280,7 @@ namespace VirtualReality
                 Init(root);
             }
         }
-        
+
         // Function to initialize the virtual world
         public void Init(WorldObject WObj)
         {
@@ -303,14 +296,14 @@ namespace VirtualReality
                 }
             }
         }
-        
+
         // Auxiliary function to load XML file
         public WorldObject LoadStimulus(string fileName)
         {
             XmlReader reader = XmlReader.Create(fileName);
             return IntermediateSerializer.Deserialize<WorldObject>(reader, Assembly.GetExecutingAssembly().Location);
         }
-        
+
         // Auxiliary function to write the data log file
         public void FileWrite(string toWrite, TextWriter textWriter)
         {
@@ -318,7 +311,7 @@ namespace VirtualReality
             textWriter.Write("\r\n");
             textWriter.Flush();
         }
-        
+
         // Disposal of all initiated objects
         protected override void OnExiting(object sender, EventArgs args)
         {
