@@ -7,7 +7,7 @@ The FlyVRena software tracks in real time the position and orientation of an age
  - Import virtual worlds in .xml format, including .xnb models and attribution of functions to update virtual object behavior according to the tracking data.
  - Frame rendering and tracking data storage.
 
-## Before Starting make sure to have installed
+## Before starting make sure to have installed
  - Microsoft Visual Studio: https://visualstudio.microsoft.com/
  - XNA Game Studio: http://flatredball.com/visual-studio-2017-xna-setup/
  - IDS camera drivers: https://en.ids-imaging.com/download-ueye-win64.html
