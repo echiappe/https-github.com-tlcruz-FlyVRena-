@@ -7,6 +7,11 @@ The FlyVRena software tracks in real time the position and orientation of an age
  - Import virtual worlds in .xml format, including .xnb models and attribution of functions to update virtual object behavior according to the tracking data.
  - Frame rendering and tracking data storage.
 
+## Before Starting make sure to have installed
+ - Microsoft Visual Studio: https://visualstudio.microsoft.com/
+ - XNA Game Studio: http://flatredball.com/visual-studio-2017-xna-setup/
+ - IDS camera drivers: https://en.ids-imaging.com/download-ueye-win64.html
+
 ## Get Started:
  - Following the intruction in the Tutorial_Create_a_Textured_Plane_for_FlyVRena.pdf create any type of 2D model of visual object.
  - Use the CreateWorld software https://github.com/tlcruz/Create-Virtual-World to create a new virtual world and set the name, position, link to the generated.fbx model and the update funtion of the visual object. This will automatically convert .fbx texturized 3D models into .xnb files and export a .xml file with the specifics of the virtual world.
