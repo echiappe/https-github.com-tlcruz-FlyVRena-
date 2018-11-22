@@ -1,4 +1,4 @@
-﻿using OpenCV.Net;
+using OpenCV.Net;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace VRLibrary.ExternalCamera
     public class uEyeCamera : IDisposable
     {
         uEye.Camera m_Camera;
-        Boolean m_IsLive;
+        public Boolean m_IsLive;
         public Int32 m_s32FrameCoutTotal;
         public uint m_s32FrameLost;
         uint m_s32FrameSaved;
@@ -33,35 +33,42 @@ namespace VRLibrary.ExternalCamera
             m_IsLive = false;
             uEye.Types.CameraInformation[] cameraList;
             uEye.Info.Camera.GetCameraList(out cameraList);
-            uEye.Defines.Status statusRet;
-            statusRet = CameraInit(Convert.ToInt32(cameraList[ID].CameraID));
-            if (statusRet == uEye.Defines.Status.SUCCESS)
+            if (cameraList.Length == 0)
             {
-                statusRet = m_Camera.Acquisition.Capture();
-                if (statusRet != uEye.Defines.Status.SUCCESS)
-                {
-                    MessageBox.Show("Starting Live Video Failed");
-                }
-                else
-                    m_IsLive = true;
+                m_IsLive = false;
             }
-            if (statusRet != uEye.Defines.Status.SUCCESS && m_Camera.IsOpened)
-                m_Camera.Exit();
-
-            LoadParametersFromFile(parPath);
-
-            if (stack)
-                queue = new ConcurrentStack<Frame>();
-
-            if (display)
+            else
             {
-                provider = new ServiceProvider();
-                vis = new TypeVisualizerDialog();
-                provider.services.Add(vis);
-                imVis = new ImageVisualizer();
-                imVis.Load(provider);
-                vis.Show();
-                vis.Location = new System.Drawing.Point(X, 0);
+                uEye.Defines.Status statusRet;
+                statusRet = CameraInit(Convert.ToInt32(cameraList[ID].CameraID));
+                if (statusRet == uEye.Defines.Status.SUCCESS)
+                {
+                    statusRet = m_Camera.Acquisition.Capture();
+                    if (statusRet != uEye.Defines.Status.SUCCESS)
+                    {
+                        MessageBox.Show("Starting Live Video Failed");
+                    }
+                    else
+                        m_IsLive = true;
+                }
+                if (statusRet != uEye.Defines.Status.SUCCESS && m_Camera.IsOpened)
+                    m_Camera.Exit();
+
+                LoadParametersFromFile(parPath);
+
+                if (stack)
+                    queue = new ConcurrentStack<Frame>();
+
+                if (display)
+                {
+                    provider = new ServiceProvider();
+                    vis = new TypeVisualizerDialog();
+                    provider.services.Add(vis);
+                    imVis = new ImageVisualizer();
+                    imVis.Load(provider);
+                    vis.Show();
+                    vis.Location = new System.Drawing.Point(X, 0);
+                }
             }
         }
 
@@ -74,35 +81,42 @@ namespace VRLibrary.ExternalCamera
             m_IsLive = false;
             uEye.Types.CameraInformation[] cameraList;
             uEye.Info.Camera.GetCameraList(out cameraList);
-            uEye.Defines.Status statusRet;
-            statusRet = CameraInit(Convert.ToInt32(cameraList[ID].CameraID));
-            if(statusRet == uEye.Defines.Status.SUCCESS)
+            if (cameraList.Length == 0)
             {
-                statusRet = m_Camera.Acquisition.Capture();
-                if (statusRet != uEye.Defines.Status.SUCCESS)
-                {
-                    MessageBox.Show("Starting Live Video Failed");
-                }
-                else
-                    m_IsLive = true;
+                m_IsLive = false;
             }
-            if (statusRet != uEye.Defines.Status.SUCCESS && m_Camera.IsOpened)
-                m_Camera.Exit();
-
-            LoadParametersFromFile(parPath);
-            m_Camera.Video.ResetCount();
-            if (stack)
-                queue = new ConcurrentStack<Frame>();
-
-            if(display)
+            else
             {
-                provider = new ServiceProvider();
-                vis = new TypeVisualizerDialog();
-                provider.services.Add(vis);
-                imVis = new ImageVisualizer();
-                imVis.Load(provider);
-                vis.Show();
-                vis.Location = new System.Drawing.Point(X, 0);
+                uEye.Defines.Status statusRet;
+                statusRet = CameraInit(Convert.ToInt32(cameraList[ID].CameraID));
+                if (statusRet == uEye.Defines.Status.SUCCESS)
+                {
+                    statusRet = m_Camera.Acquisition.Capture();
+                    if (statusRet != uEye.Defines.Status.SUCCESS)
+                    {
+                        MessageBox.Show("Starting Live Video Failed");
+                    }
+                    else
+                        m_IsLive = true;
+                }
+                if (statusRet != uEye.Defines.Status.SUCCESS && m_Camera.IsOpened)
+                    m_Camera.Exit();
+
+                LoadParametersFromFile(parPath);
+                m_Camera.Video.ResetCount();
+                if (stack)
+                    queue = new ConcurrentStack<Frame>();
+
+                if (display)
+                {
+                    provider = new ServiceProvider();
+                    vis = new TypeVisualizerDialog();
+                    provider.services.Add(vis);
+                    imVis = new ImageVisualizer();
+                    imVis.Load(provider);
+                    vis.Show();
+                    vis.Location = new System.Drawing.Point(X, 0);
+                }
             }
         }
 
@@ -110,7 +124,7 @@ namespace VRLibrary.ExternalCamera
         {
             uEye.Defines.Status statusRet = uEye.Defines.Status.NO_SUCCESS;
             statusRet = m_Camera.Init(camID);
-            if(statusRet != uEye.Defines.Status.SUCCESS)
+            if (statusRet != uEye.Defines.Status.SUCCESS)
             {
                 MessageBox.Show("Initializing the Camera Failed");
                 return statusRet;
@@ -137,21 +151,21 @@ namespace VRLibrary.ExternalCamera
         private void onFrameEvent(object sender, EventArgs e)
         {
             uEye.Camera camera = sender as uEye.Camera;
-            if(camera.IsOpened)
+            if (camera.IsOpened)
             {
                 ++m_s32FrameCoutTotal;
-                if(camera.Video.Running)
+                if (camera.Video.Running)
                 {
                     camera.Video.GetLostCount(out m_s32FrameLost);
                     camera.Video.GetFrameCount(out m_s32FrameSaved);
                 }
-                if (m_s32FrameSaved > 0 && m_s32FrameSaved >= 2*9000)
+                if (m_s32FrameSaved > 0 && m_s32FrameSaved >= 2 * 9000)
                 {
                     RecordVideo(path + "_" + aux.ToString());
                     aux = aux + 1;
                 }
 
-                if(stack || display)
+                if (stack || display)
                 {
                     IntPtr handle = new IntPtr();
                     camera.Memory.GetActive(out handle);
@@ -207,7 +221,7 @@ namespace VRLibrary.ExternalCamera
             m_Camera.Video.ResetCount();
             uEye.Defines.Status statusRet = uEye.Defines.Status.SUCCESS;
             statusRet = m_Camera.Video.Start(path + ".avi");
-            
+
             if (statusRet != uEye.Defines.Status.SUCCESS)
                 MessageBox.Show("Could Not Start Video Recording");
         }
@@ -226,7 +240,7 @@ namespace VRLibrary.ExternalCamera
             if (stack)
                 queue.Clear();
 
-            if(display)
+            if (display)
             {
                 imVis.Unload();
                 vis.Dispose();
