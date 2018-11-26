@@ -102,7 +102,6 @@
     <ProjectReference Include="..\..\VRLibrary\VRLibrary.csproj">
       <Project>{4f051024-bbf9-40d5-bd4a-79004bd28403}</Project>
       <Name>VRLibrary</Name>
-      <SpecificVersion>true</SpecificVersion>
     </ProjectReference>
     <ProjectReference Include="..\VirtualRealityContent\VirtualRealityContent.contentproj">
       <Name>VirtualRealityContent</Name>
