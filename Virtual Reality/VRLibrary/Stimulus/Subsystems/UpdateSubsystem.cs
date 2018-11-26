@@ -54,6 +54,7 @@ namespace VRLibrary.Stimulus.Subsystems
 
         public void UpdateAsync(GameTime gameTime)
         {
+            // Run the update of each component
             foreach (UpdateService upd in UpdateServices.Values)
             {
                 upd.Update(gameTime);

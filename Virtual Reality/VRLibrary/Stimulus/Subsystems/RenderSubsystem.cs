@@ -12,13 +12,6 @@ namespace VRLibrary.Stimulus.Subsystems
     public class RenderSubsystem : Microsoft.Xna.Framework.DrawableGameComponent
     {
         public bool enable = true;
-        WorldObject syncObj;
-        WorldObject cam;
-        CameraService camServ;
-        public Color[] syncColor;
-        RenderTarget2D renderSync;
-        Model syncMod;
-        PositionService synchPos;
         public bool isSynch = false;
         Effect effect;
         GraphicsDevice graphicsDevice;
@@ -62,6 +55,8 @@ namespace VRLibrary.Stimulus.Subsystems
         {
             this.Game.GraphicsDevice.BlendState = BlendState.AlphaBlend;
             this.Game.GraphicsDevice.DepthStencilState = DepthStencilState.Default;
+
+            //render every object in the list of registered services
             foreach (string n in DrawServices.Keys)
             {
                 if (n != "Camera")
@@ -69,23 +64,11 @@ namespace VRLibrary.Stimulus.Subsystems
                     DrawModel(DrawServices[n].model, DrawServices[n].pos.PosMatrix(), DrawServices["Camera"].cam.CamView(), DrawServices["Camera"].cam.CamPerspective());
                 }
             }
-            //if (isSynch)
-            //{
-            //    foreach (ModelMesh mesh in syncMod.Meshes)
-            //    {
-            //        foreach (ModelMeshPart part in mesh.MeshParts)
-            //        {
-            //            part.Effect = effect;
-            //        }
-            //        mesh.Draw();
-            //    }
-            //}
             base.Draw(gameTime);
         }
 
         public new void Dispose()
         {
-            //renderSync.Dispose();
             effect.Dispose();
             graphicsDevice.Dispose();
         }
@@ -103,35 +86,5 @@ namespace VRLibrary.Stimulus.Subsystems
                 mesh.Draw();
             }
         }
-
-        public void UpdateSync(int step)
-        {
-            graphicsDevice.SetRenderTarget(renderSync);
-            graphicsDevice.Clear(syncColor[step]);
-            graphicsDevice.SetRenderTarget(null);
-        }
-
-        public void InitializeSyncObj(int nSteps, int width, int height, WorldObject root)
-        {
-            this.syncColor = new Color[nSteps];
-            for (int i = 0; i < nSteps; i++)
-            {
-                if (i == 1)
-                    syncColor[i] = new Color(new Vector3((float)(1.27) / (nSteps-1)));
-                else
-                    syncColor[i] = new Color(new Vector3((float)(i) / (nSteps - 1)));
-            }
-            this.cam = root.GetWorldObject("Fly");
-            this.camServ = (CameraService)cam.GetService(typeof(CameraService));
-            this.syncObj = root.GetWorldObject("Sync");
-            this.syncMod = (Model)syncObj.GetService(typeof(Model));
-            this.synchPos = (PositionService)syncObj.GetService(typeof(PositionService));
-            this.renderSync = new RenderTarget2D(graphicsDevice, width, height, true, SurfaceFormat.Color, DepthFormat.Depth24Stencil8);
-
-            effect.Parameters["World"].SetValue(synchPos.PosMatrix());
-            effect.Parameters["View"].SetValue(camServ.CamView());
-            effect.Parameters["Projection"].SetValue(camServ.CamPerspective());
-            effect.Parameters["ModelTexture"].SetValue((Texture2D)renderSync);
-        }
-    }
+     }
 }
